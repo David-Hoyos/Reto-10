@@ -1,4 +1,4 @@
-# Reto-10
+# Reto 10
 ## Punto 1
 Desarrollar un algoritmo que calcule el promedio de un arreglo de reales.
 ```python
