@@ -1,7 +1,7 @@
 # Reto-10-David-Hoyos
 ## Punto 1
 Desarrollar un algoritmo que calcule el promedio de un arreglo de reales.
-```python
+```
 try: #Se usa try y except por si el usuario llega a poner un valor que no es valido. 
     cantidad = int(input("Por favor ingrese la cantidad de elementos que va a tener el arreglo de reales: "))#Se le pide al usuario cuantos elementos va a tener la lista.
     i = 0
