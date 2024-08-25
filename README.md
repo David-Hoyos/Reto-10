@@ -43,3 +43,25 @@ try:#Usamos el bloque try para capturar cualquier error de tipo ValueError que p
 except ValueError:
     print("Por favor ingrese valores validos. ")
 ```
+ ## Punto 3
+ Hacer un algoritmo que deje al final de un arreglo de numeros todos los ceros que aparezcan en dicho arreglo. 
+ ```python
+try:#Se usa try por si el usuario llega a ingresar un valor que no es valido. 
+    cantidad = int(input("Por favor ingrese cuantos elementos va a tener la lista: "))#Se le pide al usuario cuantos elementos va a tener la lista
+    vector: list = []
+
+    for i in range(cantidad):#A traves de un ciclo for se le piden al usuario los elementos que va a tener la lista.
+        x = int(input("Por favor ingrese un numero entero: "))
+        vector.append(x)#Se usa el metodo append para ingresar los valores dentro de la lista
+
+    i = 0
+    for i in range(cantidad):#Se verifica elemento por elemento si es igual a 0.
+        if vector[i] == 0:
+            vector.append(vector[i])#Si un elemento es igual a 0, se agrega un 0 al final de la lista y se borra la primera aparicion de 0 en la lista.
+            vector.remove(0)
+        else:
+            i += 1
+    print(vector)#Se imprime el resultado
+except ValueError:
+    print("Por favor ingrese un valor valido")
+ ```
